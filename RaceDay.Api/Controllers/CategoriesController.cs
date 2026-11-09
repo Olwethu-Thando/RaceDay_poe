@@ -56,7 +56,7 @@ public class CategoriesController : ApiControllerBase
         return Created($"/api/events/{eventId}/categories", category.ToResponse());
     }
 
-    /// <summary>Update a category on an event I own.</summary>
+    /// <summary>Update a category an event as a owner.</summary>
     /// <response code="200">Updated category.</response>
     /// <response code="400">Validation failed.</response>
     /// <response code="403">Caller is not the owning Organiser.</response>
