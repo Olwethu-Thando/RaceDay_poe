@@ -28,7 +28,7 @@ public class CategoriesController : ApiControllerBase
     /// <response code="201">Category created.</response>
     /// <response code="400">Validation failed (e.g. minAge greater than maxAge).</response>
     /// <response code="403">Caller is not the owning Organiser.</response>
-    /// <response code="404">Event not found.</response>
+    /// <response code="404">Event not avaliable found.</response>
     [HttpPost("events/{eventId:int}/categories")]
     [Authorize(Roles = Roles.Organiser)]
     [ProducesResponseType(typeof(CategoryResponse), StatusCodes.Status201Created)]
