@@ -24,7 +24,7 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(100);
 });
 
-// ---- Authentication: the MVC cookie holds user id, name and role ----
+// ---- Authentication:the MVC cookie holds user id,name and role ----
 builder.Services
     .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
