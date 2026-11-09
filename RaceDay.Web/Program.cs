@@ -13,7 +13,7 @@ builder.Services.AddControllersWithViews(options =>
     options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());   // CSRF protection on every POST
 });
 
-// ---- Session: the API's login cookie is kept server-side, never sent to the browser ----
+// ---- Session:the API's login cookie is kept server-side, never sent to the browser ----
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
