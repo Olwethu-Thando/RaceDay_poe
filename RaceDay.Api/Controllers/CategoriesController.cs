@@ -23,7 +23,7 @@ public class CategoriesController : ApiControllerBase
         return Ok(categories.Select(c => c.ToResponse()));
     }
 
-    /// <summary>Add an age or distance category to an event I own.</summary>
+    /// <summary>Add an age, distance category to an event I own.</summary>
     /// <remarks>Body: name (e.g. "Under 20", "21km"), minAge, maxAge, distanceKm (all optional except name).</remarks>
     /// <response code="201">Category created.</response>
     /// <response code="400">Validation failed (e.g. minAge greater than maxAge).</response>
